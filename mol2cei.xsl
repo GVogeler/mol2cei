@@ -5,6 +5,11 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:variable name="filename" select="tokenize(base-uri(),'[/\\]')[last()]"/>
     <xsl:variable name="id" select="replace($filename, '(.*?)\.xml', '$1')"/>
+
+    <!-- 
+    Preliminary analysis of TEI xML export from data in https://manus.iccu.sbn.it/memo
+    author: Georg Vogeler (University of Graz, Departement of Digital Humanities)
+    -->
     
     <xsl:template match="/">
             <xsl:apply-templates select="*"/>
@@ -237,5 +242,6 @@
     <xsl:template match="@*">
         <xsl:copy-of select="."/>
     </xsl:template>
+
 
 </xsl:stylesheet>
