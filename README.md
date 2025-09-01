@@ -1,5 +1,5 @@
 # mol2cei
-Conversions of TEI XML export from documents describe in Manus Online (MOL)
+Conversions of TEI XML export from documents described in Manus Online (MOL)
 
 author: Georg Vogeler, University of Graz
 
